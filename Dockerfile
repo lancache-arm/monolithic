@@ -1,4 +1,4 @@
-FROM rossmaclean/ubuntu-nginx-arm:latest
+FROM rossmaclean/lancache-ubuntu-nginx:latest
 LABEL version=3
 LABEL description="Single caching container for caching game content at LAN parties."
 LABEL maintainer="LanCache.Net Team <team@lancache.net>"
