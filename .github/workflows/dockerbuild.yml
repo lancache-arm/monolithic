@@ -14,5 +14,4 @@ jobs:
         with:
           version: latest
       - run: docker login --username rossmaclean --password ${{ secrets.DOCKERHUB_TOKEN }}
-      - run: docker buildx build --platform linux/arm64 -t rossmaclean/monolithic-arm:${{ github.event.inputs.version }} .
-      - run: docker push rossmaclean/monolithic-arm:${{ github.event.inputs.version }}
+      - run: docker buildx build --platform linux/arm64 -t rossmaclean/monolithic-arm:${{ github.event.inputs.version }} --push .
